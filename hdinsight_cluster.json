@@ -1,5 +1,3 @@
-/subscriptions/ae94699e-ce2e-4b5b-8399-d6281848e6a2/resourcegroups/stx-greenit-atelier-pyspark/providers/Microsoft.HDInsight/clusters/stx-greenit-pyspark-cluster
-
 {
     "id": "/subscriptions/ae94699e-ce2e-4b5b-8399-d6281848e6a2/resourceGroups/stx-greenit-atelier-pyspark/providers/Microsoft.HDInsight/clusters/stx-greenit-pyspark-cluster",
     "name": "stx-greenit-pyspark-cluster",
