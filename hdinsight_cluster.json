@@ -1,0 +1,119 @@
+/subscriptions/ae94699e-ce2e-4b5b-8399-d6281848e6a2/resourcegroups/stx-greenit-atelier-pyspark/providers/Microsoft.HDInsight/clusters/stx-greenit-pyspark-cluster
+
+{
+    "id": "/subscriptions/ae94699e-ce2e-4b5b-8399-d6281848e6a2/resourceGroups/stx-greenit-atelier-pyspark/providers/Microsoft.HDInsight/clusters/stx-greenit-pyspark-cluster",
+    "name": "stx-greenit-pyspark-cluster",
+    "type": "Microsoft.HDInsight/clusters",
+    "location": "West Europe",
+    "etag": "41e56307-2436-4b4c-ad8f-d7fef85d7f28",
+    "tags": {
+        "cout": "85perhour",
+        "CompanyCode": "A001",
+        "DIN_PGM": "PGM-ST",
+        "Otp": "SOL-T-TRV-17-A001-MCO"
+    },
+    "properties": {
+        "clusterVersion": "4.0.3000.1",
+        "clusterHdpVersion": "4.1.10.4",
+        "osType": "Linux",
+        "clusterDefinition": {
+            "blueprint": "https://blueprints.azurehdinsight.net/spark-4.0.3000.1.2207131812.json",
+            "kind": "SPARK",
+            "componentVersion": {
+                "Spark": "2.4"
+            }
+        },
+        "clusterId": "ab9de3276758467ca5acdef7ddb64ae9",
+        "computeProfile": {
+            "roles": [
+                {
+                    "name": "headnode",
+                    "targetInstanceCount": 2,
+                    "hardwareProfile": {
+                        "vmSize": "standard_a4_v2"
+                    },
+                    "osProfile": {
+                        "linuxOperatingSystemProfile": {
+                            "username": "sshuser"
+                        }
+                    },
+                    "encryptDataDisks": false
+                },
+                {
+                    "name": "workernode",
+                    "targetInstanceCount": 1,
+                    "hardwareProfile": {
+                        "vmSize": "standard_a4_v2"
+                    },
+                    "osProfile": {
+                        "linuxOperatingSystemProfile": {
+                            "username": "sshuser"
+                        }
+                    },
+                    "encryptDataDisks": false
+                },
+                {
+                    "name": "zookeepernode",
+                    "targetInstanceCount": 3,
+                    "hardwareProfile": {
+                        "vmSize": "standard_a2_v2"
+                    },
+                    "osProfile": {
+                        "linuxOperatingSystemProfile": {
+                            "username": "sshuser"
+                        }
+                    },
+                    "encryptDataDisks": false
+                }
+            ]
+        },
+        "provisioningState": "Succeeded",
+        "clusterState": "Running",
+        "createdDate": "2022-08-23T12:36:21.657",
+        "quotaInfo": {
+            "coresUsed": 12
+        },
+        "connectivityEndpoints": [
+            {
+                "name": "SSH",
+                "protocol": "TCP",
+                "location": "stx-greenit-pyspark-cluster-ssh.azurehdinsight.net",
+                "port": 22
+            },
+            {
+                "name": "HTTPS",
+                "protocol": "TCP",
+                "location": "stx-greenit-pyspark-cluster.azurehdinsight.net",
+                "port": 443
+            }
+        ],
+        "tier": "standard",
+        "encryptionInTransitProperties": {
+            "isEncryptionInTransitEnabled": false
+        },
+        "storageProfile": {
+            "storageaccounts": [
+                {
+                    "name": "stxgreenitpyshdistorage.blob.core.windows.net",
+                    "resourceId": "/subscriptions/ae94699e-ce2e-4b5b-8399-d6281848e6a2/resourceGroups/stx-greenit-atelier-pyspark/providers/Microsoft.Storage/storageAccounts/stxgreenitpyshdistorage",
+                    "msiResourceId": null,
+                    "key": null,
+                    "fileSystem": null,
+                    "container": "stx-greenit-pyspark-clu-2022-08-23t12-33-07-920z",
+                    "saskey": null,
+                    "isDefault": true,
+                    "fileshare": null
+                }
+            ]
+        },
+        "minSupportedTlsVersion": "1.2",
+        "excludedServicesConfig": {
+            "excludedServicesConfigId": "default",
+            "excludedServicesList": ""
+        },
+        "computeIsolationProperties": {
+            "enableComputeIsolation": false,
+            "hostSku": null
+        }
+    }
+}
